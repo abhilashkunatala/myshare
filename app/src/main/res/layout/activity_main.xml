@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:gravity="center_horizontal"
+    android:useDefaultMargins="false"
+    android:rowCount="14"
+    tools:context=".chat.MainActivity"
+    android:background="#87CEEB"
+    android:fontFamily="sans-serif-condensed"
+    android:alignmentMode="alignBounds"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:text="MyShare"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+    <RelativeLayout
+        android:id="@+id/wifiGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.35"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:rowCount="1"
+        android:useDefaultMargins="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/buttonCreate"
+            style="?android:textAppearanceSmall"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_live_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="create"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonJoin"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:layout_weight="0.21"
+            android:background="@drawable/btn_live_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Join"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/buttonCreate"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userName"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/input_back"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Enter your name "
+        />
+
+
+
+<GridLayout
+android:layout_width="match_parent"
+android:layout_height="86dp"
+android:layout_gravity="center_horizontal"
+android:rowCount="1"
+android:columnCount="2"
+android:id="@+id/privateGrid">
+
+    <Button
+        android:id="@+id/buttonPrivate"
+        style="?android:textAppearanceSmall"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_live_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:text="private Chat"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+<Button
+    android:layout_width="209dp"
+    android:layout_height="wrap_content"
+    android:text="send"
+    android:id="@+id/buttonchat"
+    android:layout_gravity="center_horizontal"
+    android:layout_row="0"
+    android:layout_column="1"
+    style="?android:textAppearanceSmall"
+    android:layout_marginTop="16dp"
+    android:textStyle="bold"
+    android:background="@drawable/btn_live_dark"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif-condensed"
+    android:textColor="#000" />
+
+</GridLayout>
+</LinearLayout>
